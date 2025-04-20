@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flipbook - Modul Belajar</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.css" />
+  <style>
+    body {
+      background: #e0e0e0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+    #flipbook {
+      width: 600px;
+      height: 400px;
+    }
+    .page {
+      background: white;
+      border: 1px solid #ccc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 28px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<div id="flipbook">
+  <div class="page">📚 Cover</div>
+  <div class="page">Bab 1: Kalor dan Suhu</div>
+  <div class="page">Bab 2: Perpindahan Kalor</div>
+  <div class="page">📖 Penutup</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.js"></script>
+<script>
+  $("#flipbook").turn({
+    width: 600,
+    height: 400,
+    autoCenter: true
+  });
+</script>
+
+</body>
+</html>
